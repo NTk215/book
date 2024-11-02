@@ -479,3 +479,20 @@ img.displaySlide {
     font-weight: normal;
     font-style: normal;
 }
+@media (max-width: 768px) {
+  .titles {
+      font-size: 24px;
+      width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .titles {
+      font-size: 20px;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
