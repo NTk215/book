@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+body { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f0f0f0;
+    background-image: url(../images/halloween6.webp) ; 
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.container a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+p{
+    font-size: 20px;
+}
+.container i{
+    color: #FF9900;
+    font-size:30px;
+}
+
+.container{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px solid red; */
+}
+.left{ 
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.top{
+    display: flex;
+  
+    /* border: 1px solid red; */
+  
+}
+.content1{
+    /* border: 1px solid red;  */
+    flex: 2;
+    padding: 30px 0 0 20px;
+    
+}
+.between .text1{
+    padding-left: 10px;
+    border-left:5px solid #FF9900;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.between .text2 p{
+   margin-bottom: 10px;
+}
+.content1 .t13{
+    color: #fff;
+    background: orange;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+.content1 .time{
+   
+    display: flex;
+    margin-bottom: 20px;
+}
+.content1 .time .texttime1{
+    margin-left: 20px; 
+}
+.content1 .time .texttime2{
+    margin-left: 20px;
+}
+.content1 .information button{
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.information p{
+    margin-bottom: 20px;
+}
+.information .color-button button{
+    display: inline-block;
+background: rgb(87, 161, 139);
+border: 1px solid gold;
+}
+
+.information p, .information button {
+    white-space: nowrap;
+}
+.images{
+    flex: 1;
+    max-width: 100%;
+    }
+.left .top .images img{
+    width: 100%;   
+    height: auto;
+    object-fit: cover;
+    /* border: 1px solid red; */
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    border-radius: 5px; 
+}
+
+.map {
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.map-1 {
+    border-left: 5px solid #FF9900;
+    padding-left: 10px;
+    margin-top: 10px;
+    display: flex;
+
+   
+}
+.map-2{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+ .map-2 li{
+    list-style: none;
+    font-size: 25px ;
+}
+
+
+.map-2 p:focus,
+.map-2 a:focus,
+.map-2 p:hover,
+.map-2 a:hover {
+    color: #91e488; /* Thay đổi màu chữ khi thẻ được nhấn hoặc di chuột qua */
+}
+.row {
+    
+    display: flex;
+    align-items: center;
+     flex-wrap: wrap; /*Xuong dong khi man hinh be lai */
+    border-bottom: 1px solid rgb(192, 168, 168) ;
+    padding-bottom: 10px;
+    margin: 0 ;
+    
+}
+
+.row .row1 {
+    box-sizing: border-box;
+    display:flex ;
+    flex :1;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25%;
+    margin: 10px;
+    /* border: 1px solid rgb(93, 145, 110); */
+    flex-shrink: 0;
+
+}
+
+.row .row1 .type, .format,.vip {
+    font-size: 15px;
+    margin-right: 10px;
+    border-radius: 5px ;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid gold;
+}
+.row .row1 .type {
+    background-color: #464899;
+}
+.row .row1 .format{
+    background-color: rgb(87, 161, 139);
+}
+.row .row1 .vip{
+    background-color: rgb(250, 227, 96);
+}
+.row .row1 .time1 {
+    width: 80%;
+   
+    display: flex;  
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #ff6b81;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.row .row1 .time1:hover{
+    background-color: #ff6b81;
+}
+.meta {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.right{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    overflow: hidden;
+}
+.right .present{
+    padding-left: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+    max-width: 100%;
+    height: 50px;
+    /* border: 1px solid rgb(93, 145, 110); */
+    margin-top: 20%;
+    border-left: 5px solid #FF9900;
+}
+.more .film{
+margin-top: 30px;
+}
+.more .film img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.more .film a{
+    font-size: 20px ;
+}
+.film a:focus,
+.film a:hover{
+    color: #91e488;
+}
+.film2{
+    
+    text-align: center;
+    width: 50%;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 25px;
+    border: 2px solid #ff6b81;
+    cursor: pointer;
+}
+.film2:hover{
+    background: #ff6b81;
+}
+@media (max-width: 1000px) {
+    .top {
+        flex-direction: column; /* Khi màn hình nhỏ hơn 1000px, các phần tử sẽ xếp chồng lên nhau */
+    }
+    
+    .images {
+        order: 1; /* Hình ảnh ở trên cùng */
+    }
+    
+    .content1 {
+        order: 2; /* Nội dung bên dưới hình ảnh */
+    }
+}
+@media(max-width: 800px) {
+    .container {
+        flex-direction: column; /* Chuyển đổi chiều ngang sang dọc */
+    }
+
+    .left {
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        padding: 10px; /* Giảm padding */
+    }
+
+    .right {
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        padding: 10px; /* Giảm padding */
+        margin-top: 20px; /* Thêm khoảng cách ở trên */
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap; /* Đảm bảo các phần tử xuống dòng khi không đủ không gian */
+        align-items: flex-start; /* Căn chỉnh phần tử về đầu */
+        border-bottom: 1px solid rgb(192, 168, 168);
+        padding-bottom: 10px;
+        margin: 0;
+    }
+    
+    .row .row1 {
+        box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến chiều rộng */
+        flex: 1 1 100%; /* Tự động co giãn và chiếm 100% chiều rộng khi cần */
+        max-width: 100%; /* Đảm bảo không vượt quá chiều rộng */
+        margin: 10px 0; /* Thêm khoảng cách giữa các phần tử */
+    }
+    
+    .row .row1 .time1 {
+        width: 100%; /* Đảm bảo .time1 chiếm toàn bộ chiều rộng */
+       ; /* Màu nền cho dễ nhìn */
+        display: flex;  
+        justify-content: center; /* Căn giữa nội dung */
+        text-align: center; /* Căn giữa chữ */
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    
+}
+@media (max-width: 600px) {
+
+    
+    .information p{
+        font-size: 16px;
+    }
+    .information button {
+        font-size: 16px; /* Giảm kích thước chữ */
+        padding: 3px 8px;
+    }
+    .information button {
+        display: block; /* Đặt các nút xuống dòng */
+        width: 100%; /* Đặt chiều rộng 100% cho nút */
+        margin-top: 10px;
+    }
+}
+@media(max-width: 500px) {
+    nav li {
+        font-size: 16px; 
+    }
+
+    .content1 h1 {
+        font-size: 24px; /* Giảm kích thước font chữ cho tiêu đề */
+    }
+
+    .content1 .information button {
+        font-size: 16px; /* Giảm kích thước font chữ cho nút */
+        padding: 4px 8px; /* Giảm padding cho nút */
+    }
+
+    .time1 {
+        font-size: 16px; /* Giảm kích thước font chữ cho thời gian */
+        padding: 8px; /* Giảm padding cho thời gian */
+    }
+
+    .more .film a {
+        font-size: 18px; /* Giảm kích thước font chữ cho tên phim */
+    }
+    .more .film2 a{
+        font-size: 18px;
+    }
+}

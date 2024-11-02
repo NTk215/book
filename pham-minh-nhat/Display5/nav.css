@@ -1,0 +1,86 @@
+nav{
+    background: linear-gradient(to bottom, #DC8665, #EEB462);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    position: fixed;
+    border-radius: 3px;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    font-family: 'ShlopRg', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+    list-style: none;
+    font-size: 26px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+  background: linear-gradient(to right,#787FF6, #7BD5F5);
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.logos{
+  font-family: "Anton", sans-serif!important;
+  font-weight: 400;
+  font-style:normal;
+  font-size: 30px;
+}
+.sidebar{
+    position: fixed ;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background: linear-gradient(to bottom, #DC8665, #EEB462);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 900px){
+    .hideOnmobile{
+        display: none;
+    } 
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+ @font-face {
+    font-family: "ShlopRg";
+    src: url("shlop rg.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}

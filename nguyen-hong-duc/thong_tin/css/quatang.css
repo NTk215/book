@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(../img/halloween6.png) right top fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #1a1a1a; /* Dark background color */
+}
+.container {
+  display: flex;
+  overflow: hidden;
+  margin: 20px;
+  padding-top: 90px;
+}
+.left-panel {
+  width: 25vw;
+  height: 70vh;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  background-color: #fff;
+  margin-right: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.right-panel {
+  flex-grow: 1;
+  padding: 20px;
+  background: #fff;
+  border: none;
+}
+.user-info {
+  display: flex;
+  border-bottom: 1px solid gray;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 30px solid gray;
+}
+.user-avatar i {
+  font-size: 40px;
+  background-color: gray;
+  border-radius: 50%;
+}
+.user-mot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.total-spend strong {
+  font-size: 20px;
+}
+.total-spend-1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.total-spend {
+  padding-top: 10px;
+}
+
+.point {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #1a73e8;
+  border-radius: 50%;
+  position: relative;
+}
+
+.progress-points {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: calc(100% - 6px);
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #b4dbee;
+  margin: 34px 0px 24px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 20px;
+  position: relative;
+  left: 0px;
+}
+.bi-currency-bitcoin {
+  position: relative;
+  right: 5px;
+}
+.bi-bullseye {
+  position: relative;
+  right: 6px;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+.labels span.mot {
+  position: relative;
+  left: 20px;
+}
+.labels span.hai {
+  position: relative;
+  left: 18px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.contact-info div {
+  padding-top: 15px;
+}
+.tabs {
+  display: flex;
+  border-bottom: 1px solid gray;
+  justify-content: space-around;
+}
+.tab {
+  text-decoration: none;
+  padding-bottom: 10px;
+  color: gray;
+}
+.tabs a:hover {
+  color: #24b626;
+}
+.tabs a:hover {
+  color: #24b626;
+  border-bottom: 5px solid blue;
+}
+.tab.tab-4 {
+  border-bottom: 5px solid blue;
+}
+.ba {
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .left-panel {
+    width: 100%;
+    margin-right: 0;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .right-panel {
+    width: 100%;
+  }
+
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .user-avatar i {
+    font-size: 30px;
+  }
+
+  .user-info {
+    padding-bottom: 10px;
+  }
+
+  .user-name strong {
+    font-size: 16px;
+  }
+
+  .total-spend strong {
+    font-size: 18px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tabs a {
+    border-bottom: 1px solid rgb(168, 164, 164);
+  }
+  .tab {
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .tab.tab-4 {
+    border-bottom: none;
+    background-color: yellow;
+  }
+  .ba {
+    font-size: 12px;
+  }
+}

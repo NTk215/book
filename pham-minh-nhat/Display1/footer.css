@@ -1,0 +1,89 @@
+footer {
+    background: linear-gradient(to bottom, #DC8665, #EEB462);
+    color: black;
+    font-size: 20px;
+    width: 100%;
+  }
+ 
+  .footer-infor {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+  }
+  .footer-infor .footer_width{
+    padding: 0 15px;
+  }
+  .footer-infor h2 {
+    margin-bottom: 20px;
+  }
+  .about, .contact {
+    width: 40%;
+  }
+  .link {
+    width: 20%;
+  }
+  .social-media {
+    margin-top: 30px;
+  }
+  .social-media ul{
+    display: flex;
+    list-style: none;
+  }
+  .social-media ul li a{
+    display: inline-block;
+    margin-right: 50px;
+    width: 50px;
+    height: 50px;
+    padding-top: 0;
+    background: transparent;
+    text-align: center;
+    font-size: 30px;
+  }
+  .social-media ul li a:hover{
+    background: linear-gradient(to right, #240E8B, #3C4CAD);
+    color: #FFF;
+  }
+  .link li{
+    list-style: none;
+  }
+  .link ul li a{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  .link ul li a:hover {
+    color: #FFF;
+  }
+  .contact ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .contact ul li span{
+    margin-right: 15px;
+  }
+  .copy-right {
+    padding: 15px 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #30cfd0, #330867)
+  }
+  @media screen and (max-width: 992px){
+    .about, .contact{
+      width: 35%;
+    }
+    .link {
+      width: 30%;
+    }
+  }
+  @media screen and (max-width: 767px){
+    .about, .contact, .link{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .footer-infor{
+      flex-direction:column;
+      padding: 20px;
+  }
+  }
