@@ -10,7 +10,7 @@ document
     // Kiểm tra thông tin đăng nhập
     if (username === "123@gmail.com" && password === "123456") {
       // Nếu thông tin đúng, chuyển hướng tới URL mong muốn
-      window.location.href = "../thong_tin/index.html";
+      window.location.href = "../../logout.html";
     } else {
       alert("Tài khoản hoặc mật khẩu không chính xác.");
     }
