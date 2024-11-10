@@ -1,5 +1,14 @@
 let btn = document.getElementById("button");
 let video = document.getElementById("video");
+let next = document.getElementById("next");
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "flex";
+}
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
+}
 function click() {
   if (video.paused) {
     video.play();
@@ -15,6 +24,10 @@ function click() {
 }
 btn.addEventListener("click", click);
 
+next.addEventListener("click", function () {
+  // ấn vào nút next sẽ hiện thông báo đã đặt vé thành công
+  alert("Đã đặt vé thành công!");
+});
 const seats = document.querySelectorAll(".rowseat li");
 
 seats.forEach(function (seat) {

@@ -2,11 +2,90 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   color: white;
 }
-body {
+nav {
+  background: linear-gradient(to bottom, #dc8665, #eeb462);
+  box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+  position: fixed;
+  border-radius: 3px;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+nav ul {
+  width: 100%;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+  list-style: none;
+  font-size: 20px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover {
+  background: linear-gradient(to right, #787ff6, #7bd5f5);
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.logos {
+  font-family: "Anton", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #1f2025;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.menu-button {
+  display: none;
+}
+@media (max-width: 900px) {
+  .hideOnmobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+body {
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   background-color: #1f2025;
@@ -17,8 +96,9 @@ body {
 .booking {
   width: 90%;
   height: 90%;
+  font-family: "Poppins", sans-serif;
   /* border: 1px solid white; */
-  margin: 0 auto;
+  margin: 50px auto;
   display: flex;
 }
 .left {
@@ -35,7 +115,7 @@ body {
   object-fit: cover;
 }
 .left #button {
-  background: url(/btlon/img/pk2.jpeg);
+  background: #fd6565;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -7px;
@@ -577,5 +657,95 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 100%;
+  }
+}
+footer {
+  background: linear-gradient(to bottom, #dc8665, #eeb462);
+  color: black;
+  font-size: 20px;
+}
+.footer-infor {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding: 50px 0;
+}
+.footer-infor .footer_width {
+  padding: 0 15px;
+}
+.footer-infor h2 {
+  margin-bottom: 20px;
+}
+.about,
+.contact {
+  width: 40%;
+}
+.link {
+  width: 20%;
+}
+.social-media {
+  margin-top: 30px;
+}
+.social-media ul {
+  display: flex;
+  list-style: none;
+}
+.social-media ul li a {
+  display: inline-block;
+  margin-right: 50px;
+  width: 50px;
+  height: 50px;
+  padding-top: 0;
+  background: transparent;
+  text-align: center;
+  font-size: 30px;
+}
+.social-media ul li a:hover {
+  background: linear-gradient(to right, #240e8b, #3c4cad);
+  color: #fff;
+}
+.link li {
+  list-style: none;
+}
+.link ul li a {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-decoration: none;
+}
+.link ul li a:hover {
+  color: #fff;
+}
+.contact ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.contact ul li span {
+  margin-right: 15px;
+}
+.copy-right {
+  padding: 15px 0;
+  text-align: center;
+  background: linear-gradient(to bottom, #30cfd0, #330867);
+}
+@media screen and (max-width: 992px) {
+  .about,
+  .contact {
+    width: 35%;
+  }
+  .link {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about,
+  .contact,
+  .link {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer-infor {
+    flex-direction: column;
   }
 }
